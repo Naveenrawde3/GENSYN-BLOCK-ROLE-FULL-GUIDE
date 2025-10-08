@@ -1,7 +1,7 @@
 # GENSYN-BLOCK-ROLE-FULL-GUIDE
 
 ## Requirements
-- OctaSpace account https://octa.space?ref=riZBsYWzjYx
+- OctaSpace account : https://octa.space?ref=rB2LlMpDOa7
 - Node with:
   - **CPU:** 6+ cores
   - **RAM:** 16 GB or more
