@@ -90,7 +90,9 @@ source ~/.bashrc
 ---
 
 ```bash
-cd modal-login && export NVM_DIR="$HOME/.nvm" && rm -rf "$NVM_DIR" && git clone https://github.com/nvm-sh/nvm "$NVM_DIR" && . "$NVM_DIR/nvm.sh" && nvm install 20.19.0 && nvm use 20.19.0 && node -v && (corepack enable || npm i -g yarn@1) && yarn --version && yarn install && yarn dev
+cd modal-login && export NVM_DIR="$HOME/.nvm" && rm -rf "$NVM_DIR" && git clone https://github.com/nvm-sh/nvm "$NVM_DIR" && . "$NVM_DIR/nvm.sh" && nvm install 20.19.0 && nvm use 20.19.0 && node -v && (corepack enable || npm i -g yarn@1) && yarn --version && yarn install && yarn dev 
+
+cd .. && python run.py
 ```
 
 ### 5. Run BlockAssist
