@@ -101,6 +101,26 @@ cd .. && python run.py
 python run.py
 ```
 
+ ### SINGLE COMMAND :
+ 
+```bash
+git clone https://github.com/gensyn-ai/blockassist.git
+cd blockassist && ./setup.sh && curl -fsSL https://pyenv.run | bash && export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+eval "$(pyenv virtualenv-init -)" && source ~/.bashrc && sudo apt update
+sudo apt install make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl git libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev # Dependencies for Python installation
+pyenv install 3.10 && pip install psutil readchar rich && wget https://developer.download.nvidia.com/compute/cudnn/9.11.0/local_installers/cudnn-local-repo-ubuntu2204-9.11.0_1.0-1_amd64.deb
+sudo dpkg -i cudnn-local-repo-ubuntu2204-9.11.0_1.0-1_amd64.deb
+sudo cp /var/cudnn-local-repo-ubuntu2204-9.11.0/cudnn-local-4EC753EA-keyring.gpg /usr/share/keyrings/
+echo "deb [signed-by=/usr/share/keyrings/cudnn-local-4EC753EA-keyring.gpg] file:///var/cudnn-local-repo-ubuntu2204-9.11.0 /" | sudo tee /etc/apt/sources.list.d/cudnn-local.list
+sudo apt update
+sudo apt install -y libcudnn9 libcudnn9-dev && echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc && cd modal-login && export NVM_DIR="$HOME/.nvm" && rm -rf "$NVM_DIR" && git clone https://github.com/nvm-sh/nvm "$NVM_DIR" && . "$NVM_DIR/nvm.sh" && nvm install 20.19.0 && nvm use 20.19.0 && node -v && (corepack enable || npm i -g yarn@1) && yarn --version && yarn install && yarn dev 
+
+cd .. && python run.py && python run.py
+```
+
 When prompted:
 - Enter your **Hugging Face token**
 - login your gensynAi account 
@@ -125,11 +145,3 @@ In The Swarm channel use: /block EVM_ADDRESS trainingID
 ---
 
 **follow our channel : https://t.me/ntekearning2
-
-
-
-
-
-
-
-
