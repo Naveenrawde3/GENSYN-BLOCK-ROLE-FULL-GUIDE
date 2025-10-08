@@ -14,7 +14,7 @@
 ## Steps
 
 ### 1. Deploy Node
-1. Go to https://octa.space?ref=riZBsYWzjYx
+1. Go to : https://octa.space?ref=rB2LlMpDOa7
 2. In **Desktop & Gaming**, select **Octa EGL Desktop**.
 3. Choose a node with the recommended specs.
 4. Click **Configure** (keep default settings, select 100 GB storage).
